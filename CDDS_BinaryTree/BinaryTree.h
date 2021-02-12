@@ -9,8 +9,8 @@ class BinaryTree
 {
 public:
 
-	BinaryTree() {};
-	~BinaryTree() {};
+	BinaryTree() { m_root == nullptr; };
+	~BinaryTree();
 
 	bool isEmpty() const { return m_root == nullptr; };
 	void insert(int value);
