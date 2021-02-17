@@ -4,13 +4,19 @@
 
 BinaryTree::~BinaryTree()
 {
+
 }
 
 void BinaryTree::insert(int value)
 {
 	//If the tree is empty, set the root to be a new node with the given value.
+	if (isEmpty())
+	{
+		m_root = new TreeNode(value);
+	}
 
 	//Create a TreeNode pointer that will act as an iterator pointing to the current node and set it to the root.
+	TreeNode* iter = 
 	//Create a TreeNode pointer that will act as an iterator pointing to the parent 
 	//of the current node and set it to the root.
 
@@ -84,30 +90,42 @@ void BinaryTree::remove(int value)
 TreeNode* BinaryTree::find(int value)
 {
 	//Initialize an iterator starting at the root.
+	TreeNode* iter = m_root;
 
 	//Loop through the tree while the iterator isn't nullptr.
+	while (iter != nullptr)
+	{
 		//Check if the node has the data we want
+		if ()
 			//Return the iterator
+			return iter;
+
 		//If the node doesn't have the data we want, check to see if it's higher in value.
 			//Set the iterator to be its current right child.
 		//If the node doesn't have the data we want, check to see if it's lower in value.
 			//Set the iterator to be its current left child.
 	//end loop
+	}
 
 	//Return nullptr
+	return nullptr;
 }
 
 void BinaryTree::draw(TreeNode* selected)
 {
-
+	draw(m_root, 400, 40, 400, selected);
 }
 
 bool BinaryTree::findNode(int searchValue, TreeNode*& nodeFound, TreeNode*& nodeParent)
 {
 	//Create two iterators: one that will point to the current node to compare the search value to,
 	//and the other to hold a reference to the parent.
+	TreeNode* iter1 = new TreeNode();
+	TreeNode* iter2 = new TreeNode();
 
 	//Loop while the current node iterator isn't nullptr/
+	while (iter1 != nullptr)
+	{
 		//Check if the search value is the same as the current nodes data.
 			//Set the node found argument to be the current node and the parent node to be the parent node iterator.
 			//Return true.
@@ -118,11 +136,39 @@ bool BinaryTree::findNode(int searchValue, TreeNode*& nodeFound, TreeNode*& node
 			//Set the parent node to be the current node.
 			//Set the current node to be its left child.
 	//end loop
+	}
 
 	//Return false.
+	return false;
 }
 
 void BinaryTree::draw(TreeNode* currentNode, int x, int y, int horizontalSpacing, TreeNode* selected)
 {
+	//Decrease the horizontal space as the nodes draw
+	horizontalSpacing /= 2;
 
+	//Checks if the current node is null
+	if (currentNode)
+	{
+		//Draws the left child if this node has one
+		if (currentNode->hasLeft())
+		{
+			//Draws a line between the left child and current node
+			DrawLine(x, y, x - horizontalSpacing, y + 80, RED);
+			//Draws the left child
+			draw(currentNode->getLeft(), x - horizontalSpacing, y + 80, horizontalSpacing, selected);
+		}
+
+		//Draws the right child if this node has one
+		if (currentNode->hasRight())
+		{
+			//Draws a line between this child and the current node
+			DrawLine(x, y, x + horizontalSpacing, y + 80, RED);
+			//Draws the right child
+			draw(currentNode->getRight(), x + horizontalSpacing, y + 80, horizontalSpacing, selected);
+		}
+		//Draws the current node
+
+		currentNode->draw(x, y, (selected == currentNode));
+	}
 }
