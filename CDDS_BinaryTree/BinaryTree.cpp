@@ -16,11 +16,15 @@ void BinaryTree::insert(int value)
 	}
 
 	//Create a TreeNode pointer that will act as an iterator pointing to the current node and set it to the root.
-	TreeNode* iter = 
+	TreeNode* iter = ;
 	//Create a TreeNode pointer that will act as an iterator pointing to the parent 
 	//of the current node and set it to the root.
+	TreeNode* iter = ;
 
 	//Loop until the the current node iterator reaches a nullptr.
+	while ()
+	{
+
 		//Check if the value we want to add to the tree is less than the value at the current node.
 			//Set the parent node to be the current node before the current node moves positions.
 			//Change the current node to be the child to its left and continue.
@@ -32,6 +36,7 @@ void BinaryTree::insert(int value)
 		//If the value is the same as a value already in the list return 
 
 	//end loop
+	}
 
 	//If the value we want to add is less than the value of the parent node, insert the value to the left.
 	//Otherwise, insert the value to the right.
@@ -96,14 +101,23 @@ TreeNode* BinaryTree::find(int value)
 	while (iter != nullptr)
 	{
 		//Check if the node has the data we want
-		if ()
+		if (iter->getData())
 			//Return the iterator
 			return iter;
 
 		//If the node doesn't have the data we want, check to see if it's higher in value.
+		else if (iter->getData > value)
+		{
 			//Set the iterator to be its current right child.
+			iter->setRight(iter);
+		}
+
 		//If the node doesn't have the data we want, check to see if it's lower in value.
+		else if (iter->getData < value)
+		{
 			//Set the iterator to be its current left child.
+			iter->setLeft(iter);
+		}
 	//end loop
 	}
 
@@ -120,21 +134,38 @@ bool BinaryTree::findNode(int searchValue, TreeNode*& nodeFound, TreeNode*& node
 {
 	//Create two iterators: one that will point to the current node to compare the search value to,
 	//and the other to hold a reference to the parent.
-	TreeNode* iter1 = new TreeNode();
-	TreeNode* iter2 = new TreeNode();
+	TreeNode* iter1;
+	TreeNode* iter2;
 
 	//Loop while the current node iterator isn't nullptr/
 	while (iter1 != nullptr)
 	{
 		//Check if the search value is the same as the current nodes data.
+		if (searchValue == iter1->getData())
+		{
 			//Set the node found argument to be the current node and the parent node to be the parent node iterator.
+			iter1 = nodeFound;
 			//Return true.
+			return true;
+		}
+
 		//Check if the search value is greater than the value at the current node.
+		if (searchValue > iter1->getData)
+		{
 			//Set the parent node to be the current node.
+			
 			//Set the current node to be the child to the right of the current node.
+
+		}
+
 		//Check if the search value is less than the value at the current node.
+		if (searchValue < iter1->getData)
+		{
 			//Set the parent node to be the current node.
+
 			//Set the current node to be its left child.
+
+		}
 	//end loop
 	}
 
