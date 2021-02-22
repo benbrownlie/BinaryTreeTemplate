@@ -1,4 +1,11 @@
 ﻿  BinaryTree.cpp
+C:\Users\s208049\Documents\Projects\BinaryTreeTemplate\CDDS_BinaryTree\BinaryTree.h(12,24): warning C4553: '==': result of expression not used; did you intend '='?
+C:\Users\s208049\Documents\Projects\BinaryTreeTemplate\CDDS_BinaryTree\BinaryTree.cpp(109,33): error C3867: 'TreeNode::getData': non-standard syntax; use '&' to create a pointer to member
+C:\Users\s208049\Documents\Projects\BinaryTreeTemplate\CDDS_BinaryTree\BinaryTree.cpp(109,33): error C2446: '>': no conversion from 'int' to 'int (__cdecl TreeNode::* )(void)'
+C:\Users\s208049\Documents\Projects\BinaryTreeTemplate\CDDS_BinaryTree\BinaryTree.cpp(109,28): message : There are no conversions from integral values to pointer-to-member values
+C:\Users\s208049\Documents\Projects\BinaryTreeTemplate\CDDS_BinaryTree\BinaryTree.cpp(116,33): error C3867: 'TreeNode::getData': non-standard syntax; use '&' to create a pointer to member
+C:\Users\s208049\Documents\Projects\BinaryTreeTemplate\CDDS_BinaryTree\BinaryTree.cpp(116,33): error C2446: '<': no conversion from 'int' to 'int (__cdecl TreeNode::* )(void)'
+C:\Users\s208049\Documents\Projects\BinaryTreeTemplate\CDDS_BinaryTree\BinaryTree.cpp(116,28): message : There are no conversions from integral values to pointer-to-member values
   main.cpp
 C:\Users\s208049\Documents\Projects\BinaryTreeTemplate\Raygui\src\raygui.h(749,63): warning C4838: conversion from 'int' to 'float' requires a narrowing conversion
 C:\Users\s208049\Documents\Projects\BinaryTreeTemplate\Raygui\src\raygui.h(749,63): warning C4244: 'initializing': conversion from 'int' to 'float', possible loss of data
@@ -125,7 +132,6 @@ C:\Users\s208049\Documents\Projects\BinaryTreeTemplate\Raygui\src\raygui.h(3341,
 C:\Users\s208049\Documents\Projects\BinaryTreeTemplate\Raygui\src\raygui.h(3341,26): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
 C:\Users\s208049\Documents\Projects\BinaryTreeTemplate\Raygui\src\raygui.h(3356,107): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
 C:\Users\s208049\Documents\Projects\BinaryTreeTemplate\Raygui\src\raygui.h(3356,74): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\s208049\Documents\Projects\BinaryTreeTemplate\CDDS_BinaryTree\BinaryTree.h(12,24): warning C4553: '==': result of expression not used; did you intend '='?
   TreeNode.cpp
   Generating Code...
-C:\Users\s208049\Documents\Projects\BinaryTreeTemplate\CDDS_BinaryTree\BinaryTree.cpp(122): error C4716: 'BinaryTree::findNode': must return a value
-C:\Users\s208049\Documents\Projects\BinaryTreeTemplate\CDDS_BinaryTree\BinaryTree.cpp(98): error C4716: 'BinaryTree::find': must return a value
