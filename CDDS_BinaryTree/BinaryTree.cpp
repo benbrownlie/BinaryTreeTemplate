@@ -169,22 +169,22 @@ TreeNode* BinaryTree::find(int value)
 	while (iter != nullptr)
 	{
 		//Check if the node has the data we want
-		if (iter->getData())
+		if (iter->getData() == value)
 			//Return the iterator
 			return iter;
 
 		//If the node doesn't have the data we want, check to see if it's higher in value.
-		else if (iter->getData() > value)
+		else if (iter->getData() < value)
 		{
 			//Set the iterator to be its current right child.
-			iter->setRight(iter);
+			iter = iter->getRight();
 		}
 
 		//If the node doesn't have the data we want, check to see if it's lower in value.
-		else if (iter->getData() < value)
+		else if (iter->getData() > value)
 		{
 			//Set the iterator to be its current left child.
-			iter->setLeft(iter);
+			iter = iter->getLeft();
 		}
 	//end loop
 	}
