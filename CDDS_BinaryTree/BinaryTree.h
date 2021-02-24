@@ -43,7 +43,7 @@ private:
 	/// <param name = "horizontalSpacing"> The amount of space to place between this node</param>
 	void draw(TreeNode*, int x, int y, int horizontalSpacing, TreeNode* selected = nullptr);
 
-	TreeNode* m_root = nullptr;
+	TreeNode* m_root;
 };
 
 #endif
