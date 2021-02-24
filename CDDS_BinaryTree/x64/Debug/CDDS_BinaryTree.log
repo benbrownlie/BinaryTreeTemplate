@@ -1,3 +1,7 @@
-﻿  BinaryTree.cpp
-C:\Users\s208049\Documents\Projects\BinaryTreeTemplate\CDDS_BinaryTree\BinaryTree.h(12,24): warning C4553: '==': result of expression not used; did you intend '='?
+﻿raylib.lib(core.obj) : warning LNK4099: PDB 'raylib.pdb' was not found with 'raylib.lib(core.obj)' or at 'C:\Users\s208049\Documents\Projects\BinaryTreeTemplate\bin\x64\Debug\raylib.pdb'; linking object as if no debug info
+raylib.lib(rglfw.obj) : warning LNK4099: PDB 'raylib.pdb' was not found with 'raylib.lib(rglfw.obj)' or at 'C:\Users\s208049\Documents\Projects\BinaryTreeTemplate\bin\x64\Debug\raylib.pdb'; linking object as if no debug info
+raylib.lib(shapes.obj) : warning LNK4099: PDB 'raylib.pdb' was not found with 'raylib.lib(shapes.obj)' or at 'C:\Users\s208049\Documents\Projects\BinaryTreeTemplate\bin\x64\Debug\raylib.pdb'; linking object as if no debug info
+raylib.lib(text.obj) : warning LNK4099: PDB 'raylib.pdb' was not found with 'raylib.lib(text.obj)' or at 'C:\Users\s208049\Documents\Projects\BinaryTreeTemplate\bin\x64\Debug\raylib.pdb'; linking object as if no debug info
+raylib.lib(textures.obj) : warning LNK4099: PDB 'raylib.pdb' was not found with 'raylib.lib(textures.obj)' or at 'C:\Users\s208049\Documents\Projects\BinaryTreeTemplate\bin\x64\Debug\raylib.pdb'; linking object as if no debug info
+raylib.lib(utils.obj) : warning LNK4099: PDB 'raylib.pdb' was not found with 'raylib.lib(utils.obj)' or at 'C:\Users\s208049\Documents\Projects\BinaryTreeTemplate\bin\x64\Debug\raylib.pdb'; linking object as if no debug info
   CDDS_BinaryTree.vcxproj -> C:\Users\s208049\Documents\Projects\BinaryTreeTemplate\bin\x64\Debug\CDDS_BinaryTree.exe
