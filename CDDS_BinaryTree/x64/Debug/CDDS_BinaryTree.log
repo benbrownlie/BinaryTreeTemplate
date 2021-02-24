@@ -1,2 +1,1 @@
-﻿  BinaryTree.cpp
-C:\Users\s208049\Documents\Projects\BinaryTreeTemplate\CDDS_BinaryTree\BinaryTree.cpp : fatal error C1041: cannot open program database 'C:\Users\s208049\Documents\Projects\BinaryTreeTemplate\CDDS_BinaryTree\x64\Debug\vc142.pdb'; if multiple CL.EXE write to the same .PDB file, please use /FS
+﻿  CDDS_BinaryTree.vcxproj -> C:\Users\Benjamin\Documents\ProjectsAAA\BinaryTreeTemplate\bin\x64\Debug\CDDS_BinaryTree.exe
