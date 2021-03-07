@@ -4,7 +4,10 @@
 
 BinaryTree::~BinaryTree()
 {
-
+	while (!isEmpty())
+	{
+		remove(m_root->getData());
+	}
 }
 
 void BinaryTree::insert(int value)
